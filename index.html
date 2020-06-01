@@ -34,7 +34,7 @@
 
         .h-card {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 2fr 1fr;
         }
 
         .navlist {
@@ -42,61 +42,79 @@
         }
 
         .p-name p {
-            font-size:0.5em;
+            font-size: 0.5em;
+        }
+
+        .articles {
+            display: grid;
+            grid-auto-rows: min-content;
         }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="h-card">
-            <h1 class="p-name">Tolis Christomanos <p>Random Scribblings...</p></h1>
-            
-            <nav><ul class="nav-list">
+        <header class="h-card">
+            <h1 class="p-name">Tolis Christomanos <p>Random Scribblings...</p>
+            </h1>
+
+            <nav>
+                <ul class="nav-list">
                     <li><a href="/">Blog</a></li>
                     <li><a class="u-url" href="https://twitter.com/chchrist" rel="me">Twitter: @chchrist</a></li>
                     <li><a class="u-url" href="https://github.com/chchrist" rel="me">Github: @chchrist</a></li>
-                    <li><a class="u-url" href="https://stackoverflow.com/users/69654/chchrist" rel="me">Stack Overflow: chchrist</a></li>
-                    </ul>
+                    <li><a class="u-url" href="https://stackoverflow.com/users/69654/chchrist" rel="me">Stack Overflow:
+                            chchrist</a></li>
+                </ul>
             </nav>
 
-        </div>
+        </header>
 
-        <section class="posts">
+        <section class="articles">
             <article class="h-entry">
                 <h1 class="p-name">Connection: keep-alive and performance</h1>
                 <ul>
-                    <li><time class="dt-published" datetime="2020-06-01 10:00:00">Published: 1<sup>st</sup> June 2020</time></li>
-                    <li><time class="dt-updated" datetime="2020-06-01 10:14:00">Updated: 1<sup>st</sup> June 2020</time></li>
+                    <li><time class="dt-published" datetime="2020-06-01 10:00:00">Published: 1<sup>st</sup> June
+                            2020</time></li>
+                    <li><time class="dt-updated" datetime="2020-06-01 10:14:00">Updated: 1<sup>st</sup> June 2020</time>
+                    </li>
                 </ul>
-                
-                
+
+
                 <div class="e-content">
-                    <p>When you need to get APIs and you want to make multiple requests it is better to send the Connection: keep-alive header to reduce latency in subsequent requests.</p>
-                    <p>More here: <a href="https://en.wikipedia.org/wiki/HTTP_persistent_connection">https://en.wikipedia.org/wiki/HTTP_persistent_connection</a></p>
+                    <p>When you need to make multiple requests to an API it is better to send the
+                        Connection: keep-alive header to reduce latency in subsequent requests.</p>
+                    <p>More about that here: <a
+                            href="https://en.wikipedia.org/wiki/HTTP_persistent_connection">https://en.wikipedia.org/wiki/HTTP_persistent_connection</a>
+                    </p>
                 </div>
             </article>
             <article class="h-entry">
                 <h1 class="p-name">Micro frontends assessment questionaire</h1>
                 <ul>
-                    <li><time class="dt-published" datetime="2020-05-31 23:00:00">Published: 31<sup>st</sup> May 2020</time></li>
-                    
+                    <li><time class="dt-published" datetime="2020-05-31 23:00:00">Published: 31<sup>st</sup> May
+                            2020</time></li>
+
                 </ul>
-                
+
                 <div class="e-content">
-                    <p>I'm trying to put together a list of questions to be able to assess the status of microfrontends in a
+                    <p>I'm trying to put together a list of questions to be able to assess the status of microfrontends
+                        in a
                         company.</p>
                     <p>You can find the list of questions and potential answers <a
                             href="https://docs.google.com/spreadsheets/d/1Y5X7wD5lfLyjHbVMZYXKdue0EaZMCVZQzeYPs5j-pHQ/edit?usp=sharing">here</a>
                     </p>
                     <p>Please add more suggestions as comments in the sheet.</p>
                 </div>
-           
+
             </article>
 
-            
-            
+
+
         </section>
+        <footer>
+            <p>&copy; 2020 Tolis Christomanos</p>
+        </footer>
     </div>
 
 </body>
