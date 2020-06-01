@@ -13,7 +13,7 @@
         html,
         body {
             background-color: #F0EFEB;
-
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .wrapper {
@@ -47,6 +47,7 @@
     <div class="wrapper">
         <div class="h-card">
             <h1 class="p-name">Tolis Christomanos</h1>
+            <p>Random Scribblings...</p>
             <nav><ul class="nav-list">
                     <li><a href="/">Blog</a></li>
                     <li><a class="u-url" href="https://twitter.com/chchrist" rel="me">Twitter: @chchrist</a></li>
@@ -57,6 +58,13 @@
         </div>
 
         <section class="posts">
+            <article class="h-entry">
+                <h1 class="p-name">Connection: keep-alive and performance</h1>
+                <time class="dt-published" datetime="2020-06-01 10:00:00">1<sup>st</sup> June 2020</time>
+                <div class="e-content">
+                    <p>When you need to get APIs and you want to make multiple requests it is better to send the Connection: keep-alive header to reduce latency in subsequent requests.</p>
+                </div>
+            </article>
             <article class="h-entry">
                 <h1 class="p-name">Micro frontends assessment questionaire</h1>
                 <time class="dt-published" datetime="2020-05-31 23:00:00">31<sup>st</sup> May 2020</time>
@@ -70,6 +78,8 @@
                 </div>
            
             </article>
+
+            
             
         </section>
     </div>
