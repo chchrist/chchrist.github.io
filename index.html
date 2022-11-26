@@ -51,10 +51,12 @@
         var wrapper = document.getElementsByClassName("wrapper")[0];
         var heading = document.getElementsByTagName("h1")[0];
         heading.addEventListener("mouseover",function(e){
-            wrapper.classList.add("switch")
+            wrapper.classList.add("switch");
+            this.innerHTML = "!"
         })
         heading.addEventListener("mouseout",function(e){
-            wrapper.classList.remove("switch")
+            wrapper.classList.remove("switch");
+            this.innerHTML = "Silence";
         })
     </script>
 </html>
